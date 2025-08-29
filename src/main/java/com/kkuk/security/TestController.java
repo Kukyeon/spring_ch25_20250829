@@ -26,4 +26,13 @@ public class TestController {
 	public String logout() {
 		return "logout";
 	}
+	@RequestMapping(value = "/test.do")
+	public String test() {
+		return "test";
+	}
+	
+	@RequestMapping(value = "/user.do")
+	public String user() {
+		return "user";
+	}
 }
