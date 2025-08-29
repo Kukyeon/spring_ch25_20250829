@@ -5,12 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>admin.jsp</title>
+<title>로그아웃</title>
 </head>
 <body>
-	<h2>로그인 인증 되었습니다.</h2>
-	<h2>이 파일은 admin.jsp 입니다.</h2>
-	<hr>
-	<a href="logout.do"> 로그 아웃 </a>
+	<h2>로그인한 아이디 : ${pageContext.request.userPrincipal.name }</h2>
+	<a href="<c:url value="j_spring_security_logout" />">logout 하기</a>
 </body>
 </html>

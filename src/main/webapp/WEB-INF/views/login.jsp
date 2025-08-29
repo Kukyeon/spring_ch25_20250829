@@ -14,7 +14,7 @@
 	<c:if test="${not empty pageContext.request.userPrincipal}">
 		<h2>로그인 상태입니다.</h2>
 		<h2>로그인 한 아이디 : ${pageContext.request.userPrincipal.name }</h2>
-		<h3><a href="<c:url value="j_spring_security_logout" />">로그아웃</a></h3>
+		<a href="logout.do"> 로그 아웃 </a>
 	</c:if>
 </body>
 </html>

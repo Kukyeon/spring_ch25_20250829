@@ -7,9 +7,9 @@
 
 	
 	<security:http auto-config="true">
-		<security:form-login login-page="/loginForm" authentication-failure-url="/loginForm?ng" />
-		<security:intercept-url pattern="/loginOk*" access="ROLE_USER"/>
-		<security:intercept-url pattern="/adminOk*" access="ROLE_ADMIN"/>
+		<security:form-login login-page="/loginForm.do" />
+		<security:intercept-url pattern="/login.*" access="ROLE_USER"/>
+		<security:intercept-url pattern="/admin.*" access="ROLE_ADMIN"/>
 	</security:http>
 	
 	<security:authentication-manager>
